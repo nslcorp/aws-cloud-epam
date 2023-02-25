@@ -1,56 +1,22 @@
-# React-shop-cloudfront
-
-
-# Section for home task module 2:
-
-
-(later it will be ovverided and made a good Dock stylish)
-
-
-### Task 2.1: Manual Deployment
-1. Files manually uploaded to bucket:
-   module-2-app-1-initial-react-app
-
-2. Enabled static website hosting property:
-   http://module-2-app-1-initial-react-app.s3-website.eu-central-1.amazonaws.com/
-
-
-### Task 2.2 Automated Deployment with “serverless-finch plugin”
-Deployed to bucket:
-module-2-app-2-react-epam-template
-
-Backed URL is closed by bucket policy:
-http://module-2-app-2-react-epam-template.s3-website.eu-central-1.amazonaws.com/
-
-Hosted using CloudFront:
-https://d3tokh7e7fhqo0.cloudfront.net/
-
-### Task 2.3 Automate Deployment by creating all infrastructure
-
-was used:
-- CloudFormation
--   serverless-finch plugin
--  serverless-single-page-app-plugin
-
-Git:
-https://github.com/nslcorp/aws-react-ecomerce
+# Book Shop
 
 CloudDistribution:
 https://d1pcilzlaus1qs.cloudfront.net
 
-Static web site hosting link:
-(But this link is not unable as Bucket Policy but the task disallow to host site from bucket directly. Just show that is really works)
-http://aws-react-ecomerce-backet.s3-website.eu-central-1.amazonaws.com
+
+### Task 2: Automate Deployment by creating all infrastructure
+Tags: `AWS S3`, `Cloudformation`, `serverless`, `plugins: serverless-finch, serverless-single-page-app-plugin`
 
 
+### Task 3: connect existed UI with 'product-service' response
+Tags: `AWS Lambda`, `Api Gateway`
 
 
 
 
 # Here comes default Readme of this project
 
-
-This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
+This is Client for Book-shop  project for nodejs-aws mentoring program.
 
 - [Vite](https://vitejs.dev/) as a project bundler
 - [React](https://beta.reactjs.org/) as a frontend framework
@@ -84,15 +50,12 @@ Starts the project in production mode on local environment.
 
 Runs tests in console, in browser or with coverage.
 
-### `lint`, `prettier`
 
-Runs linting and formatting for all files in `src` folder.
-
-### `client:deploy`, `client:deploy:nc`
+### `client:deploy`
 
 Deploy the project build from `dist` folder to configured in `serverless.yml` AWS S3 bucket with or without confirmation.
 
-### `client:build:deploy`, `client:build:deploy:nc`
+### `client:build:deploy`
 
 Combination of `build` and `client:deploy` commands with or without confirmation.
 
@@ -108,11 +71,11 @@ Display cloudfront domain information in console.
 
 Invalidate cloudfront cache.
 
-### `cloudfront:build:deploy`, `cloudfront:build:deploy:nc`
+### `cloudfront:build:deploy`
 
 Combination of `client:build:deploy` and `cloudfront:invalidateCache` commands with or without confirmation.
 
-### `cloudfront:update:build:deploy`, `cloudfront:update:build:deploy:nc`
+### `cloudfront:update:build:deploy`
 
 Combination of `cloudfront:setup` and `cloudfront:build:deploy` commands with or without confirmation.
 
