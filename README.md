@@ -1,17 +1,17 @@
 # Book Shop
 
-###Client URL at CloudDistribution:
-```
 https://d1pcilzlaus1qs.cloudfront.net
-```
 
+## Development Histroy:
 
 ### Task 2: Automate Deployment by creating all infrastructure
 Tags: `AWS S3`, `Cloudformation`, `serverless`, `plugins: serverless-finch, serverless-single-page-app-plugin`
 
-
 ### Task 3: connect existed UI with 'product-service' response
 Tags: `AWS Lambda`, `Api Gateway`
+
+### Task 4: integrate 'product-service' with DynamoDB storage
+Tags: `DynamoDB`
 
 
 
@@ -33,48 +33,15 @@ This is Client for Book-shop  project for nodejs-aws mentoring program.
 - [Prettier](https://prettier.io/) as a code formatting tool
 - [TypeScript](https://www.typescriptlang.org/) as a type checking tool
 
-## Available Scripts
+## Main scripts
 
 ### `start`
 
 Starts the project in dev mode with mocked API on local environment.
 
-### `build`
-
-Builds the project for production in `dist` folder.
-
-### `preview`
-
-Starts the project in production mode on local environment.
-
-### `test`, `test:ui`, `test:coverage`
-
-Runs tests in console, in browser or with coverage.
-
-
 ### `client:deploy`
 
 Deploy the project build from `dist` folder to configured in `serverless.yml` AWS S3 bucket with or without confirmation.
-
-### `client:build:deploy`
-
-Combination of `build` and `client:deploy` commands with or without confirmation.
-
-### `cloudfront:setup`
-
-Deploy configured in `serverless.yml` stack via CloudFormation.
-
-### `cloudfront:domainInfo`
-
-Display cloudfront domain information in console.
-
-### `cloudfront:invalidateCache`
-
-Invalidate cloudfront cache.
-
-### `cloudfront:build:deploy`
-
-Combination of `client:build:deploy` and `cloudfront:invalidateCache` commands with or without confirmation.
 
 ### `cloudfront:update:build:deploy`
 

@@ -9,21 +9,27 @@ export const products: Product[] = [
     id: "7567ec4b-b10c-48c5-9345-fc73c48a80aa",
     price: 24,
     title: "ProductOne",
-    img: '',
+    img: "",
+    genre: "detective",
+    author: "Test Author",
   },
   {
     description: "Short Product Description7",
     id: "7567ec4b-b10c-48c5-9345-fc73c48a80a1",
     price: 15,
     title: "ProductTitle",
-    img: '',
+    img: "",
+    genre: "detective",
+    author: "Test Author",
   },
   {
     description: "Short Product Description2",
     id: "7567ec4b-b10c-48c5-9345-fc73c48a80a3",
     price: 23,
     title: "Product",
-    img: '',
+    img: "",
+    genre: "detective",
+    author: "Test Author",
   },
 ];
 
@@ -38,19 +44,11 @@ export const cart: CartItem[] = [
       id: "7567ec4b-b10c-48c5-9345-fc73c48a80aa",
       price: 24,
       title: "ProductOne",
-      img: ''
+      img: "",
+      genre: "detective",
+      author: "Test Author",
     },
     count: 2,
-  },
-  {
-    product: {
-      description: "Short Product Description7",
-      id: "7567ec4b-b10c-45c5-9345-fc73c48a80a1",
-      price: 15,
-      title: "ProductName",
-      img: ''
-    },
-    count: 5,
   },
 ];
 
