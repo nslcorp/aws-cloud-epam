@@ -42,9 +42,9 @@ export const handlers = [
   rest.get(`${API_PATHS.order}/order`, (req, res, ctx) => {
     return res(ctx.status(200), ctx.delay(), ctx.json<Order[]>(orders));
   }),
-  rest.put(`${API_PATHS.order}/order`, (req, res, ctx) => {
-    return res(ctx.status(200));
-  }),
+  // rest.put(`${API_PATHS.order}/order`, (req, res, ctx) => {
+  //   return res(ctx.status(200));
+  // }),
   rest.get(`${API_PATHS.order}/order/:id`, (req, res, ctx) => {
     const order = orders.find((p) => p.id === req.params.id);
     if (!order) {
