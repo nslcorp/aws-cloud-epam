@@ -64,9 +64,12 @@ export default function PageCart() {
         count: i.count,
       })),
       address,
+      total: data
+        .map((record) => record.count * record.product.price)
+        .reduce((a, b) => a + b, 0),
     };
 
-    submitOrder(values as Omit<Order, "id">, {
+    submitOrder(values as any, {
       onSuccess: () => {
         setActiveStep(activeStep + 1);
         invalidateCart();
